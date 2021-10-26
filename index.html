@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brute Force</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu" id="menu">
+            <h1> Brute Force</h1>
+            <button onclick="bilangan_prima()">BILANGAN PRIMA</button><br>
+            <button onclick="faktorial()">FAKTORIAL</button><br>
+            <button onclick="pangkat()"> PANGKAT </button>
+        </div>
+        <div class="prima" id="prima">
+            <h1> Bilangan Prima </h1>
+            <table>
+                <tr>
+                    <td>
+                        <form><input type="number" id="inp_prima" name="inp_prima" placeholder="angka">
+                        </form>
+                    </td>
+                    <td><button onclick="proses_prima()" id="bp_cek"> CEK </button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="tp_hasil"> Hasil :</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea disabled id="hasil"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button onclick="kembali()" id="kembali">Kembali</button>
+
+        </div>
+        <div class="faktorial" id="faktorial">
+            <h1> Faktorial </h1>
+            <table>
+                <tr>
+                    <td>
+                        <form><input type="number" id="inp_fak" name="inp_fak" placeholder="angka">
+                        </form>
+                    </td>
+                    <td><button onclick="proses_faktorial()" id="bf_cek"> CEK </button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="tf_hasil"> Hasil :</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea disabled id="f_hasil"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+            <button onclick="kembali()" id="kembali">Kembali</button>
+        </div>
+        <div class="pangkat" id="pangkat">
+            <h1> Pangkat </h1>
+            <table>
+                <tr>
+                    <form>
+                        <td>
+                            <input type="number" id="inp_ap" name="inp_ap" placeholder="angka">
+                        </td>
+                        <td><input type="number" id="inp_pangkat" name="inp_pangkat" placeholder="pangkat"></td>
+                    </form>
+                    <td><button onclick="proses_pangkat()" id="bpp_cek"> CEK </button></td>
+                </tr>
+                <tr>
+                    <td colspan="3" id="tpp_hasil"> Hasil :</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <textarea disabled id="pp_hasil"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+            <button onclick="kembali()" id="kembali">Kembali</button>
+        </div>
+    </div>
+    <script src="asset/js/program.js"></script>
+</body>
+
+</html>
